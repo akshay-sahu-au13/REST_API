@@ -1,0 +1,24 @@
+<div class="heading1 prof-heading">
+    <p>Scroll through some really cool blogs and enjoy reading it</p>
+</div>
+<div class="section blogpage">
+    <div class="left"><a href="/blogs" class="button blog">Wanna write a blog?</a></div>
+    <div class="right">
+        <a href="/login" class="button">Login</a>
+        <a href="/signup" class="button">Signup</a>
+    </div>
+</div>
+
+
+<div class="container">
+    {{!-- <h2 class="heading2">Author: {{author}}</h2> --}}
+    <div class="section">
+        <ul>
+            {{#each blogs}}
+            <li class="author">- written by {{this.userId.name}}</li>
+            <li class="blog-title">{{this.title}}</li>
+            <li class="blog-body">{{this.body}}</li> <br><br>
+            {{/each}}
+        </ul>
+    </div>
+</div>

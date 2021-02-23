@@ -1,0 +1,36 @@
+<h1 class="heading1">Write your blog here...</h1>
+
+<div class="container">
+    <span class="backtoprofile"><a href="/profile" class="button">Back to profile</a></span>
+    <div class="inner-wrapper">
+
+        <form action="/blogs" method="POST" class="signup">
+
+
+            <div class="grp1">
+                <label for="title">
+                    Title: <input type="text" name="title" id="title" class="input" required
+                        placeholder="Enter the title here">
+                    <span class="err">{{error.email}}</span>
+                </label>
+            </div>
+
+            <div class="grp1">
+
+                <label for="body">
+                    Content:
+                </label>
+                <textarea name="body" id="body" cols="70" rows="10" placeholder="Enter the contents here..."></textarea>
+            </div>
+
+
+            <button type="submit" class="buttons button">Post blog</button>
+        </form>
+
+        <div class="new_blog">
+            <span class="blogspan1">{{blog.message}}</span>
+            <span class="blogspan">{{blog.title}}</span>
+            <span class="blogspan">{{blog.body}}</span>
+        </div>
+    </div>
+</div>

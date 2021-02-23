@@ -1,0 +1,39 @@
+<h1 class="heading1">Sign up here! </h1>
+
+<div class="container">
+    <div class="inner-wrapper">
+        <form action="/signup" method="POST" class="signup">
+            <div class="grp1">
+                <label for="name">
+                    Name: <input type="text" name="name" id="name" maxlength="25" class="input" value="{{name}}">
+                    <span class="err">{{err.name}}</span>
+                </label>
+
+                <label for="email">
+                    Email: <input type="email" name="email" id="email" required class="input" value="{{email}}">
+                    <span class="err">{{error.email}}</span>
+                </label>
+
+            </div>
+            <div class="grp1">
+                <label for="phone">
+                    Contact: <input type="number" name="phone" id="phone" minlength="10" maxlength="13" class="input"
+                        required value="{{phone}}">
+                </label>
+                <span class="err">{{err.phone}}</span>
+                <label for="password">
+                    Password: <input type="password" name="password" id="password" class="input" required minlength="6">
+                </label>
+                {{!-- <span class="err">{{err.password}}</span> --}}
+            </div>
+            <label for="T&C">
+                <input type="checkbox" name="Agree_terms" required id="T&C" checked="checked">
+                I agree to all the terms and conditions
+            </label>
+            <button type="submit" class="buttons button">Sign Up</button>
+        </form>
+        <div class="login-signup">
+            <p>Already have an account? <a href="/login">Log in here</a></p>
+        </div>
+    </div>
+</div>

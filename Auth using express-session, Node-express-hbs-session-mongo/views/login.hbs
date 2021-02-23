@@ -1,0 +1,26 @@
+<h1 class="heading1">Login Page</h1>
+
+<div class="container">
+    <div class="inner-wrapper">
+        <form action="/login" method="POST" class="signup">
+            <span class="errmsg">{{error.message}}</span>
+            <div class="grp1 login">
+                <label for="email">
+                    Email: <input type="email" name="email" id="email" class="input" required value="{{email}}">
+                    <span class="err">{{error.email}}</span>
+                </label>
+
+
+                <label for="password">
+                    Password: <input type="password" name="password" id="password" class="input" required minlength="6">
+                </label>
+                <span class="err">{{error.password}}</span>
+            </div>
+
+            <button type="submit" class="buttons button login">Login</button>
+        </form>
+        <div class="login-signup">
+            <p>Don't have an account? <a href="/signup">Sign up here!</a></p>
+        </div>
+    </div>
+</div>

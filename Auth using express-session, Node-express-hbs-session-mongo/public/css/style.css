@@ -1,0 +1,220 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #fefff8;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.342)), url('./images/pexels-travis-blessing-1363876.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.heading1 {
+    text-align: center;
+    font-size: 200%;
+    margin:30px 0 30px 0;
+    text-decoration: underline;
+    color: #d8e5fa;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.button {
+    display: inline-block;
+    margin: 20px 40px;
+    padding: 10px 30px;
+    background-color: #243f6ba9;
+    border-radius: 5px;
+    color: ghostwhite;
+    transition: 0.2s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: none;
+    box-shadow: 3px 3px 5px -2px #7e7e7ec9;
+}
+
+.button:hover {
+    background-color: rgb(83, 83, 83);
+    color: rgb(248, 233, 26);
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.para1 {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-wrapper {
+    height: 70vh;
+}
+
+.container {
+    margin: 40px 50px;
+    background-image: linear-gradient(#694d8375, #f14d9a23);
+    border-radius: 10px;
+    padding: 20px 20px;
+    border: 0.6px solid #1b1224a9;
+}
+
+.grp1 {
+    width: 90%;
+    margin: 30px 20px ;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+label {
+    margin-left: 50px;
+}
+
+.input, textarea {
+    border-radius: 3px;
+    border: none;
+    padding: 7px;
+    margin-left: 40px;
+    min-width: 250px;
+}
+
+
+.err {
+    font-size: 70%;
+    color: rgb(2, 1, 1);
+    text-shadow:2px 2px 2px rgb(250, 248, 248);
+}
+
+.login {
+    margin-top: 80px;
+}
+
+.login-signup {
+    text-align: center;
+    font-size: 65%;
+    margin-top: 30px;
+}
+
+.errmsg {
+    color: rgb(250, 186, 199);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: underline;
+    text-shadow:1px 1px 1px rgb(255, 22, 33);
+}
+
+.header {
+    width: 100vw;
+    margin: 30px 20px;
+    padding: 30px 30px;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(13, 164, 252, 0.568) gold);
+}
+
+.section {
+    margin: 20px 20px;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog {
+    background-color: rgb(112, 200, 255);
+    color: rgba(255, 255, 255, 0.993);
+    text-shadow: 1px 1px 1px blue;
+}
+
+.prof-heading {
+    margin-bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: rgb(30, 30, 87);
+    text-shadow: 3px 3px 10px paleturquoise;
+    text-align: center;
+}
+
+.greet {
+    color: rgb(245, 189, 169);
+    font-weight: 400;
+    transition: 0.5s;
+    margin-bottom: 40px;
+}
+
+.blogspan {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 70% ;
+    color: powderblue;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.blogspan1 {
+    text-decoration: underline;
+    margin: 15px auto;
+    color: royalblue;
+    font-size: 20px;
+}
+
+.new_blog {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.backtoprofile {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 70%;
+}
+
+ul {
+    list-style: none;
+}
+
+.blog-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+    font-weight: 500;
+    text-decoration: underline;
+    color: coral;
+    text-shadow: 1px 1px 3px rgb(248, 220, 220)smoke;
+}
+
+.allblogs {
+    display: flex;
+    justify-content: center;
+}
+
+.read-blog {
+    box-shadow: 0px -3px 0px 0px rgba(245, 245, 245, 0.233), 0px 3px 0px 0px rgba(252, 252, 252, 0.233);
+    color: rgba(219, 255, 249, 0.884);
+    background-color: initial;
+    text-shadow: 1px 1px 2px rgb(117, 2, 139);
+}
