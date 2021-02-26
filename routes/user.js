@@ -90,6 +90,8 @@ router.get('/login', (req, res)=> {
     })
 });
 
+
+
 router.post('/login', 
 [
     check('email', "Please enter the email").isEmail(),
@@ -127,6 +129,7 @@ router.get('/profile', auth, (req, res)=> {
     // console.log(req.session.user)
     res.render('profile', {title: "Profile", user: req.session.user, layout});
 });
+
 
 router.get('/logout', (req, res)=> {
     req.session.user = "";
